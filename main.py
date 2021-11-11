@@ -14,8 +14,6 @@ def actions_define():
         func_type = func_data['Type']
         func_args = func_data['Args']
 
-        print(len(func_args))
-
         if func_type == 'Function':
             print(func_data['In'] + " = " + func_name)
             condition_value = func_data['Condition']['Value']
