@@ -12,27 +12,33 @@
   ],
   "MainFunctions": {
     "OpenBrowser": {
+      "Args": [],
       "Type": "Function",
       "In": "IsOpen",
       "Condition": {
-        "Value": "True",
-        "Type": "bool"
+        "Value": "False",
+        "Type": "bool",
+        "Do": "MsgBox(\"Open Failed\") \n    End"
       }
     },
     "NavigateBrowser": {
+      "Args": [],
       "Type": "Function",
       "In": "IsNavigate",
       "Condition": {
-        "Value": "True",
-        "Type": "bool"
+        "Value": "False",
+        "Type": "bool",
+        "Do": "MsgBox(\"Navigate Failed\") \n    End"
       }
     },
     "GetTitle": {
+      "Args": ["test"],
       "Type": "Function",
       "In": "WinTitle",
       "Condition": {
         "Value": "test",
-        "Type": "String"
+        "Type": "String",
+        "Do": "MsgBox(\"Window Not Found\") \n    End"
       }
     }
   }
