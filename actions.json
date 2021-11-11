@@ -1,0 +1,39 @@
+{
+  "Variables": [
+    {
+      "Name": "Dim WinTitle As String"
+    },
+    {
+      "Name": "Dim IsOpen As Boolean"
+    },
+    {
+      "Name": "Dim IsNavigate As Boolean"
+    }
+  ],
+  "MainFunctions": {
+    "OpenBrowser": {
+      "Type": "Function",
+      "In": "IsOpen",
+      "Condition": {
+        "Value": "True",
+        "Type": "bool"
+      }
+    },
+    "NavigateBrowser": {
+      "Type": "Function",
+      "In": "IsNavigate",
+      "Condition": {
+        "Value": "True",
+        "Type": "bool"
+      }
+    },
+    "GetTitle": {
+      "Type": "Function",
+      "In": "WinTitle",
+      "Condition": {
+        "Value": "test",
+        "Type": "String"
+      }
+    }
+  }
+}
